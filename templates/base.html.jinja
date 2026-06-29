@@ -19,6 +19,15 @@
             <li><a href="{% url 'notes' %}" class="hover:underline">Notatki</a></li>
         </ul>
     </nav>
+    <nav class="bg-emerald-700 text-white px-4 py-2">
+        <ul class="flex flex-wrap gap-3 text-sm">
+            <li><a href="{% url 'create_book' %}" class="hover:underline">Dodaj książkę</a></li>
+            <li><a href="{% url 'create_author' %}" class="hover:underline">Dodaj autora</a></li>
+            <li><a href="{% url 'create_publisher' %}" class="hover:underline">Dodaj wydawcę</a></li>
+            <li><a href="{% url 'create_series' %}" class="hover:underline">Dodaj serię</a></li>
+            <li><a href="{% url 'create_note' %}" class="hover:underline">Dodaj notatkę</a></li>
+        </ul>
+    </nav>
     <main class="pb-16">
         <h2 class="w-full bg-white rounded-lg shadow-md p-4 text-lg font-semibold text-center">{% block title %}{% endblock %}</h2>
         {% block content %}
